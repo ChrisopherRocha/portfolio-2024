@@ -78,6 +78,9 @@ function scrollAppear(){
     var projAppear = document.querySelector('.proj-appear');
     var drink = document.querySelector('.cocktail-appear');
     var fitAppear = document.querySelector('.fitness-appear');
+    var thirty = document.querySelector('.pro-appearrs')
+    var thirtyTwo = document.querySelector('.pro-appearrss')
+
 
 
 
@@ -86,6 +89,9 @@ function scrollAppear(){
     var introPositiont = projAppear.getBoundingClientRect().top;
     var introPositionDrink = drink.getBoundingClientRect().top;
     var introPositionFitness = fitAppear.getBoundingClientRect().top;
+    var thirtyShow = thirty.getBoundingClientRect().top;
+    var thirtyTwoShow = thirtyTwo.getBoundingClientRect().top;
+
 
 
     var screenPosition = window.innerHeight;
@@ -104,6 +110,12 @@ function scrollAppear(){
     }
     if(introPositionFitness < screenPosition) {
         fitAppear.classList.add('intro-appear');
+    }
+    if(thirtyShow < screenPosition) {
+        thirty.classList.add('intro-appear');
+    }
+    if(thirtyTwoShow < screenPosition) {
+        thirtyTwo.classList.add('intro-appear');
     }
   }
   

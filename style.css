@@ -598,7 +598,7 @@ PROJECTS
   color: white;
 }
 
-.pro-appear, .pro-appearr, .proj-appear, .cocktail-appear, .fitness-appear {
+.pro-appear, .pro-appearr, .proj-appear, .cocktail-appear, .fitness-appear, .pro-appearrs, .pro-appearrss, .jsthirty-appear {
   width: 80%;
   opacity: 0;
   transform: translateY(20px);
@@ -608,6 +608,13 @@ PROJECTS
 .intro-appear {
   opacity: 1;
   transform: translateY(0px);
+}
+
+.project__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 /* 
@@ -783,3 +790,27 @@ width 80vw
   height: 100px;
   background-color: blue;
 }
+
+
+/* github link added last */
+.project__description--link i {
+  color: orange;
+  font-size: 30px;
+  margin-right: 16px;
+  animation: animate .5s linear infinite alternate-reverse;
+}
+
+.project__description--link i:hover {
+  color: #fff; 
+  transition: color .4s;
+}
+
+@keyframes animate {
+  0% {
+    transform: scale(1)
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
