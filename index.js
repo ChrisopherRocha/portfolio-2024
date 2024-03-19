@@ -43,10 +43,10 @@ function contact(event) {
 
     emailjs
         .sendForm(
-            'service_exjff55',
-            'template_lrh0ifa',
+            'service_te12zje',
+            'template_hnse6ae',
             event.target,
-            'user_t3nFbX13MAKY12BvzXcfL'
+            'qKQ2r72ELrXosO2Hv'
         ).then(() => {
             // throw new Error("error");
             loading.classList.remove("modal__overlay--visible");
